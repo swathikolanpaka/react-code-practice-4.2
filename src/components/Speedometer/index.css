@@ -1,8 +1,13 @@
 /* Write your CSS here */
 .bg-container {
   background-color: #07080c;
+  text-align: center;
+  padding: 40px;
 }
-
+.img-props {
+  height: 30vh;
+  width: 60vh;
+}
 .heading {
   color: #ffffff;
   font-family: Roboto;
@@ -10,11 +15,19 @@
 .speed-change {
   color: #ffffff;
 }
+
+.button-container {
+  align-items: center;
+}
 .btn1 {
   background-color: #0b69ff;
   cursor: point;
+  border-radius: 10px;
+  border-width: 0px;
+  padding: 2px;
   outline: none;
   color: #ffffff;
+  margin: 10px;
 }
 
 .btn2 {
@@ -22,4 +35,8 @@
   cursor: point;
   outline: none;
   color: #94a3b8;
+  border-radius: 10px;
+  border-width: 2px;
+  border-color: #94a3b8;
+  padding: 2px;
 }

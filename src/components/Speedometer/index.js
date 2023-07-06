@@ -4,8 +4,8 @@ import './index.css'
 
 class Speedometer extends Component {
   state = {speed: 0}
-  increaseSpeed = () => {
-    if (count < 200) {
+  onIncreaseSpeed = () => {
+    if (speed < 200) {
       this.setState(previousSpeed => ({
         speed: previousSpeed.speed + 10,
       }))
@@ -15,6 +15,7 @@ class Speedometer extends Component {
       }))
     }
   }
+
   applyBreak = () => {
     if (speed > 0) {
       this.setState(previousSpeed => ({
@@ -28,7 +29,7 @@ class Speedometer extends Component {
   }
 
   render() {
-    let {speed} = this.state
+    const {speed} = this.state
     return (
       <div className="bg-container">
         <h1 className="heading">SPEEDOMETER</h1>
@@ -40,10 +41,10 @@ class Speedometer extends Component {
         <h2 className="speed-change">Speed is {speed}mph</h2>
         <p>Min Limit is 0mph, Max Limit is 200mph</p>
         <div className="button-container">
-          <button className="btn1" onClick={this.increaseSpeed}>
+          <button className="btn1" onClick={this.onIncreaseSpeed}>
             Accelerate
           </button>
-          <button className="btn2" onClick={this.applyBreak}>
+          <button className="btn2" onClick={this.onApplyBreak}>
             Apply Brake
           </button>
         </div>
