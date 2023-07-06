@@ -4,7 +4,9 @@ import './index.css'
 
 class Speedometer extends Component {
   state = {speed: 0}
+
   onIncreaseSpeed = () => {
+    const {speed} = this.state
     if (speed < 200) {
       this.setState(previousSpeed => ({
         speed: previousSpeed.speed + 10,
@@ -17,6 +19,7 @@ class Speedometer extends Component {
   }
 
   applyBreak = () => {
+       const {speed} = this.state
     if (speed > 0) {
       this.setState(previousSpeed => ({
         speed: previousSpeed.speed - 10,
