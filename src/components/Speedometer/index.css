@@ -1,0 +1,25 @@
+/* Write your CSS here */
+.bg-container {
+  background-color: #07080c;
+}
+
+.heading {
+  color: #ffffff;
+  font-family: Roboto;
+}
+.speed-change {
+  color: #ffffff;
+}
+.btn1 {
+  background-color: #0b69ff;
+  cursor: point;
+  outline: none;
+  color: #ffffff;
+}
+
+.btn2 {
+  background-color: transparent;
+  cursor: point;
+  outline: none;
+  color: #94a3b8;
+}
