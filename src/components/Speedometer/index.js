@@ -18,8 +18,8 @@ class Speedometer extends Component {
     }
   }
 
-  applyBreak = () => {
-       const {speed} = this.state
+  onApplyBreak = () => {
+    const {speed} = this.state
     if (speed > 0) {
       this.setState(previousSpeed => ({
         speed: previousSpeed.speed - 10,
